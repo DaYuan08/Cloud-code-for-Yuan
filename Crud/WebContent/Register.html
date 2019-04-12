@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register System.</title>
+<style type="text/css">
+body{
+	text-align:center;
+	font-size:26px;
+	line-height:30px;
+	color:black;
+}
+input {
+	font-size:18px;	
+}
+</style>
+</head>
+<body>
+<h5>请填写以下信息.</h5>
+<form action="Add_User" method="post">
+username : <input type="text" name="username"/><br/>
+password : <input type="password" name="password"/><br/>
+type : <input type="radio" name="type" value="admin"/>admin&nbsp;<input type="radio" name="type" value="user"/>user<br/>
+<input type="submit"/>&nbsp;<input type="reset"/>
+</form>
+</body>
+</html>
