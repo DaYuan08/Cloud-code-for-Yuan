@@ -20,6 +20,23 @@
 	       color:white;
 	   }
 	</style>
+	<script type="text/javascript">
+	  $(function(){
+          var cks = $(":checkbox:gt(0)"); 
+          var fk = $(":checkbox:first").click(function(){
+              cks.prop("checked", $(this).prop("checked"));
+          });
+          cks.click(function(){
+              if(!$(this).prop("checked")){
+                  fk.prop("checked",false);
+              }else{
+                  if(cks.filter(":not(:checked)").length == 0){
+                      fk.prop("checked",true);
+                  }
+              }
+          });
+      });
+	</script>
 </head>
 <body>
     <div style="margin:auto;">
